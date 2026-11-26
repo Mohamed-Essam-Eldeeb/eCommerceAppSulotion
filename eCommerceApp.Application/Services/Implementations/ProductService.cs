@@ -26,7 +26,7 @@ namespace eCommerceApp.Application.Services.Implementations
 
             return result > 0
                 ? new ServiceResponse(true, "Product has been deleted")
-                : new ServiceResponse(false, "Product failed to be deleted");
+                : new ServiceResponse(false, "Product not found or failed to be deleted");
         }
 
         public async Task<IEnumerable<GetProduct>> GetAllAsync()

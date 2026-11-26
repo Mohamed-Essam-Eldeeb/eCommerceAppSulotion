@@ -8,7 +8,7 @@ namespace eCommerceApp.Infrastructure.Data
 {
     public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options)
     {
-        public DbSet <category> categorys { get; set; }
+        public DbSet <Category> categorys { get; set; }
         public DbSet <Category> Categories { get; set; }
     }
 }

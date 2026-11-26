@@ -27,7 +27,7 @@ namespace eCommerceApp.Infrastructure.DependencyInjection
             }),
             ServiceLifetime.Scoped);
 
-            services.AddScoped<IGeneric<category>, GenericRepository<category>>();
+            services.AddScoped<IGeneric<Category>, GenericRepository<Category>>();
             services.AddScoped<IGeneric<Category>, GenericRepository<Category>>();
             return services;
         }
