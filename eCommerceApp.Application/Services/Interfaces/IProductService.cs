@@ -1,5 +1,4 @@
 ﻿using eCommerceApp.Application.DTOs;
-using eCommerceApp.Application.DTOs.Category;
 using eCommerceApp.Application.DTOs.Product;
 
 namespace eCommerceApp.Application.Services.Interfaces

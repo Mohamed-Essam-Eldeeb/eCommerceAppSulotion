@@ -2,7 +2,7 @@
 
 namespace eCommerceApp.Application.DTOs.Product
 {
-    public class UpdateProduct : categoryBase
+    public class UpdateProduct : ProductBase
     {
         [Required]
         public Guid Id { get; set; }

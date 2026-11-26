@@ -2,7 +2,7 @@
 
 namespace eCommerceApp.Application.DTOs.Product
 {
-    public class categoryBase
+    public class ProductBase
     {
         [Required]
         public string? Name { get; set; }

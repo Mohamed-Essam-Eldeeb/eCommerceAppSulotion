@@ -1,5 +1,4 @@
-﻿using eCommerceApp.Application.DTOs.Category;
-using eCommerceApp.Application.DTOs.Product;
+﻿using eCommerceApp.Application.DTOs.Product;
 using eCommerceApp.Application.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 

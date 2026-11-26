@@ -10,10 +10,9 @@ namespace eCommerceApp.Application.DependencyInjection
         public static IServiceCollection AddApplicationService(this IServiceCollection services)
         {
             services.AddAutoMapper(cfg => cfg.AddProfile<MappingConfig>());
-            services.AddScoped<ICategoryService, CategoryService>();
+            services.AddScoped<IProductService, ProductService>();
             services.AddScoped<ICategoryService, CategoryService>();
 
- 
             return services;
         }
     }

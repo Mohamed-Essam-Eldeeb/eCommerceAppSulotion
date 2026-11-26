@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using eCommerceApp.Application.DTOs;
-using eCommerceApp.Application.DTOs.Category;
 using eCommerceApp.Application.DTOs.Product;
 using eCommerceApp.Application.Services.Interfaces;
 using eCommerceApp.Domain.Entities;
@@ -32,7 +31,7 @@ namespace eCommerceApp.Application.Services.Implementations
         public async Task<IEnumerable<GetProduct>> GetAllAsync()
         {
             var rawData = await productInterface.GetAllAsync();
-            if (!rawData.Any()) return [];
+            if (rawData is null || !rawData.Any()) return [];
 
             return mapper.Map<IEnumerable<GetProduct>>(rawData);
         }

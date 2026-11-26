@@ -2,9 +2,6 @@
 using eCommerceApp.Application.DTOs.Category;
 using eCommerceApp.Application.DTOs.Product;
 using eCommerceApp.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace eCommerceApp.Application.Mapping
 {
@@ -13,13 +10,13 @@ namespace eCommerceApp.Application.Mapping
         public MappingConfig()
         {
             CreateMap<CreateCategory, Category>();
-            CreateMap<CreateProduct, Category>();
+            CreateMap<CreateProduct, Product>();
 
             CreateMap<Category, GetCategory>();
-            CreateMap<Category, GetProduct>();
+            CreateMap<Product, GetProduct>();
 
             CreateMap<UpdateCategory, Category>();
-            CreateMap<UpdateProduct, Category>();
+            CreateMap<UpdateProduct, Product>();
         }
     }
 }
